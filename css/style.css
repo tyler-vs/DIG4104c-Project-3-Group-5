@@ -1,0 +1,27 @@
+html, body {
+    margin: 0px;
+}
+
+section { 
+    padding: 150px 0px;
+}
+
+#container div {
+    float: left;
+}
+
+#container1, 
+#container2, 
+#container3,
+#container4,
+#container5, 
+#container6, 
+#container7, 
+#container8,
+#container9 {
+    width: 460px;
+    height: 460px;
+    position: relative;
+    /*border: 1px solid red;*/
+    float:left;
+}

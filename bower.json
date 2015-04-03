@@ -1,0 +1,32 @@
+{
+  "name": "DIG4104c-Project-Three-Group-5",
+  "version": "0.0.1",
+  "homepage": "na",
+  "authors": [
+    "tyler-vs <tylervucf@knights.ucf.edu>"
+  ],
+  "description": "an expereince design focused website for UCF DIG4104c",
+  "main": "index.html",
+  "keywords": [
+    "experience",
+    "design",
+    "DIG4104c"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "threejs": "*",
+    "dat-gui": "~0.5.1",
+    "stats.js": "*",
+    "d3": "~3.5.5",
+    "bootstrap": "~3.3.4"
+  }
+}
