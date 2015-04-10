@@ -13,5 +13,9 @@ to do list
 - need to read in information... planet data
 - get bg color, space bg applied
 - parallax
-- traveller thingy
+- satellite
+- planet quiz
+- d3 imports
+- planet moon scroller
+- d3 planet scales
 - 
