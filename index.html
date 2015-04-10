@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="css/960.css">
 
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,9 +22,16 @@
 
 </head>
 
-<body>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<body id="foo" data-0="background-color: rgba(0,0,0,0.1);" data-center="background-color: rgba(0,0,0,1);">
 
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="text-center">Get Ready for a Good Time.</h1>
+    </div>
+  </div>
+</div>
 
 <section class="container_12">
   <div class="grid_6">
@@ -30,6 +39,20 @@
   </div>
     <div class="grid_6">
     <H3>The Sun</H3>
+    <div class="panel panel-default" data-top="background-" data-center="background-">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Sol
+        </h3>
+      </div>
+      <div class="panel-body">
+        <p>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptas aut itaque vero, corporis dolorem eum atque! Consequuntur ab ullam aliquid quae, sint aliquam doloremque, vitae odit aut, labore consequatur.</span>
+          <span>Eaque quasi, repellat, et ad similique aliquid temporibus placeat eveniet rem. Nobis sapiente velit debitis assumenda optio sit blanditiis eos iste maxime, possimus, ab nihil voluptatum veniam. Molestias, maiores, quam.</span>
+          <span>Distinctio, beatae! Quas, fuga! Veniam saepe consequatur quaerat eius amet ratione ad, rerum recusandae odit dolorum iste officia. Dolorum accusamus vero consequatur animi, ad eius ex deserunt nam quos eum.</span>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -105,13 +128,26 @@
   </div>
 </section>
 
+<div id="progress" data-0="width: 0%; background-color: rgb(0,0,255);" data-end="width: 100%; background-color: rgb(0,255,0;);" ></div>
+
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/threejs/build/three.min.js"></script>
   <script src="bower_components/dat-gui/build/dat.gui.min.js"></script>
   <script src="bower_components/stats.js/build/stats.min.js"></script>
   <script src="bower_components/d3/d3.min.js"></script>
+  <script src="bower_components/skrollr/dist/skrollr.min.js"></script>
   <!-- imports our planet script -->
   <script src="js/index.js"></script>
+
+  <script>
+
+    // working w/ skrollr
+    // 
+
+    var s = skrollr.init([
+      smoothSrolling = false
+      ]);
+  </script>
 
 </body>
 

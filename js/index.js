@@ -77,21 +77,30 @@ function App( containerId, fullWidth, fullHeight, viewX, viewY, viewWidth, viewH
 // init variables
 var container, stats;
 var camera, scene, renderer;
+// not used.
 var mesh, group1, group2, group3, light;
 
 var sunGroup,
-mercuryGroup,
-venusGroup,
-earthGroup,
-marsGroup,
-jupiterGroup,
-saturnGroup,
-uranusGroup,
-neptuneGroup;
+    mercuryGroup,
+    venusGroup,
+    earthGroup,
+    marsGroup,
+    jupiterGroup,
+    saturnGroup,
+    uranusGroup,
+    neptuneGroup;
+
+
+// not used
 var mouseX = 0, mouseY = 0;
+
+// not really used
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
+
+
 init();
+
 function init() {
 
 // grab container
@@ -100,6 +109,8 @@ container = document.getElementById( containerId );
 
 // create our camera.
 camera = new THREE.PerspectiveCamera( 20, container.clientWidth / container.clientHeight, 1, 10000 );
+// this gives a whole view perspective, the whole solar system scene.
+// works against our up-close individual view of each planet.
 //          camera.setViewOffset( fullWidth, fullHeight, viewX, viewY, viewWidth, viewHeight );
 //          camera.position.z = 1800;
 camera.position.z = 3000; // sets to this if fails switch statement;
@@ -312,8 +323,11 @@ scene.add( neptuneGroup );
 //
 // setups up some renderer setting,
 // every scene consists of a camera, renderer and lighting
-renderer = new THREE.WebGLRenderer( { antialias: true } );
-renderer.setClearColor( 0xffffff );
+renderer = new THREE.WebGLRenderer({ 
+  antialias: true,
+  alpha: true
+});
+// renderer.setClearColor( 0xffffff );
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( container.clientWidth, container.clientHeight );
 container.appendChild( renderer.domElement );
@@ -427,7 +441,7 @@ break;
 case 'container6':
 camera.position.x = jupiterGroup.position.x * 1;
 camera.position.y = jupiterGroup.position.x * .01;
-camera.position.z = 600;
+camera.position.z = 400;
 camera.lookAt( jupiterGroup.position );
 break;
 case 'container7':
