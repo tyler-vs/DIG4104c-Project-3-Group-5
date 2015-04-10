@@ -18,5 +18,14 @@ to do list
 - d3 imports
 - planet moon scroller
 - d3 planet scales
-
+- points of reference between the planets -> d3 graphs
+- no full lengths of text
+- lots of text -> modal window
+- how much time will person look
+- clickable things, `showcase` view
+- interactive books
+-   audio events
+-   visuals to drive to look scientific text 
+-   kids edu apps on ipad
+-   keep the text, visuals lead to the text
 
