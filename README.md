@@ -28,4 +28,13 @@ to do list
 -   visuals to drive to look scientific text 
 -   kids edu apps on ipad
 -   keep the text, visuals lead to the text
+-   
+
+
+scoped
+- skroller dimming per planet and sun.
+- introductory page 
+- angular data handling
+- parallax obbjects
+- add sounds
 
